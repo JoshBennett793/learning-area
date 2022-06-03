@@ -12,6 +12,13 @@
             font: .9em/1.2 Arial, Helvetica, sans-serif;
         }
 
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            grid-auto-rows: minmax(100px auto);
+        }
+        
         .container > div {
             border-radius: 5px;
             padding: 10px;
@@ -23,7 +30,6 @@
 
 <body>
     <h1>Simple grid example</h1>
-
     <div class="container">
         <div>One</div>
         <div>Two</div>
@@ -32,6 +38,8 @@
         <div>Five</div>
         <div>Six</div>
         <div>Seven</div>
+        <div>Eight</div>
+        <div>Nine</div>
     </div>
 
 </body>
